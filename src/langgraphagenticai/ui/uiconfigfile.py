@@ -1,7 +1,7 @@
 from configparser import ConfigParser, ParsingError
 
 class Config:
-    def __init__(self, config_file_path="uiconfigfile.ini"):
+    def __init__(self, config_file_path="./src/langgraphagenticai/ui/uiconfigfile.ini"):
         self.config = ConfigParser()
         try:
             with open(config_file_path, 'r', encoding='utf-8-sig') as f: 
